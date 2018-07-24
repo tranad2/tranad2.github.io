@@ -13,20 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# Site settings
 title: Alexander Tran
-email: atran116@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "tranad2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: tranad2
-github_username:  tranad2
+url: "" # the base hostname & protocol for your site
+# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+baseurl: ""
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
@@ -45,3 +42,5 @@ exclude:
 collections:
   projects:
     output: true
+
+repository: "tranad2/tranad2.github.io"
